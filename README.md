@@ -32,6 +32,35 @@ A web-based platform to streamline clinic operations for doctors and receptionis
 - **Backend**: Firebase Auth, Firestore (Realtime DB optional)  
 - **Hosting**: Firebase Hosting or local dev server  
 - **Logging**: Console logs (extendable with tools like Winston/LogRocket)
+##config.env
+Create a file named config.env inside the /backend folder and add your credentials:
+
+---
+
+## 📄 Sample `config.env` Template
+
+```env
+# Server Port
+PORT=4000
+
+# MongoDB Connection URI
+MONGO_URI=your_mongodb_connection_string
+
+# Frontend URI (usually Vite dev server)
+FRONTEND_URI=http://localhost:5173
+
+# Dashboard Base URI
+DASHBOARD_URI=http://localhost:5173
+
+# JWT Authentication
+JWT_EXPIRES=7d
+JWT_SECRET_KEY=your_jwt_secret_key
+COOKIE_EXPIRES=7
+
+# Cloudinary API (for image uploads)
+CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
+CLOUDINARY_API_SECRET=your_cloudinary_api_secret
+CLOUDINARY_API_KEY=your_cloudinary_api_key
 
 
 
